@@ -9,21 +9,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class MyTq {
-	/**ÐèÇó£ºÕÒ³öÃ¿¸öÔÂÆøÎÂ×î¸ßµÄ2Ìì
-       Êý¾Ý£º
-        1949-10-01 14:21:02	34c
-		1949-10-01 19:21:02	38c
-		1949-10-02 14:01:02	36c
-		1950-01-01 11:21:02	32c
-		1950-10-01 12:21:02	37c
-		1951-12-01 12:21:02	23c
-		1950-10-02 12:21:02	41c
-		1950-10-03 12:21:02	27c
-		1951-07-01 12:21:02	45c
-		1951-07-02 12:21:02	46c
-		1951-07-03 12:21:03	47c
 
-	 */
 
 	public static void main(String[] args) throws Exception {
 		Configuration conf = new Configuration(true);
@@ -31,7 +17,7 @@ public class MyTq {
 		job.setJarByClass(MyTq.class);
 		//---- conf
 		//--map
-		//job.setInputFormatClass(xxoo.class); ÊäÈë¸ñÊ½»¯
+		//job.setInputFormatClass(xxoo.class); ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½
 		job.setMapperClass(TqMapper.class);
 		job.setMapOutputKeyClass(Tq.class);
 		job.setMapOutputValueClass(IntWritable.class);

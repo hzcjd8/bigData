@@ -15,6 +15,7 @@ public class FoFReducer extends Reducer<Text, IntWritable, Text, Text> {
 		//hadoop:hello  0
 		//hadoop:hello  1
 		//hadoop:hello  1
+		//
 		int sum=0;
 		int flg=0;
 		for (IntWritable v : vals) {
