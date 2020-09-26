@@ -13,7 +13,7 @@ public class StartRun {
 		conf.set("mapreduce.app-submission.corss-paltform", "true");
 		conf.set("mapreduce.framework.name", "local");
 		
-		//所有mr的输入和输出目录定义在map集合中  111
+		//所有mr的输入和输出目录定义在map集合中  13311
 		Map<String, String> paths = new HashMap<String, String>();
 		paths.put("Step1Input", "/data/itemcf/input/");
 		paths.put("Step1Output", "/data/itemcf/output/step1");
@@ -29,12 +29,12 @@ public class StartRun {
 		paths.put("Step6Input", paths.get("Step5Output"));
 		paths.put("Step6Output", "/data/itemcf/output/step6");
 
-	//	Step1.run(conf, paths);
-	//	Step2.run(conf, paths);
-	//	Step3.run(conf, paths);
+		Step1.run(conf, paths);
+		Step2.run(conf, paths);
+		Step3.run(conf, paths);
 		Step4.run(conf, paths);
-	//	Step5.run(conf, paths);
-	//	Step6.run(conf, paths);
+		Step5.run(conf, paths);
+		Step6.run(conf, paths);
 	}
 
 	public static Map<String, Integer> R = new HashMap<String, Integer>();

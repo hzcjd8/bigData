@@ -23,7 +23,7 @@
     </property>
     <property>
         <name>dfs.namenode.secondary.http-address</name>
-        <value>zk:50090</value>
+        <value>ha:50090</value>
     </property>
 
 </configuration>
