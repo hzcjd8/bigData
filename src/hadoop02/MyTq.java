@@ -17,7 +17,7 @@ public class MyTq {
 		job.setJarByClass(MyTq.class);
 		//---- conf
 		//--map
-		//job.setInputFormatClass(xxoo.class); �����ʽ��
+		//job.setInputFormatClass(xxoo.class); 
 		job.setMapperClass(TqMapper.class);
 		job.setMapOutputKeyClass(Tq.class);
 		job.setMapOutputValueClass(IntWritable.class);
