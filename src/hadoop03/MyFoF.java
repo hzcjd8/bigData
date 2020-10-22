@@ -16,7 +16,7 @@ public class MyFoF {
 		job.setJarByClass(MyFoF.class);
 		//---- conf
 		//--map
-		//job.setInputFormatClass(xxoo.class); ËæìÂÖ•Ê†ºÂºèÂåñ
+		//job.setInputFormatClass(xxoo.class);  ‰»Î∏Ò ΩªØ
 		job.setMapperClass(FoFMapper.class);
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(IntWritable.class);
