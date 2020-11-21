@@ -1,4 +1,4 @@
-package hadoop03;
+package hadoop05;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -18,7 +18,7 @@ public class MyFoF {
 		job.setJarByClass(MyFoF.class);
 		//---- conf
 		//--map
-		//job.setInputFormatClass(xxoo.class); 
+		//job.setInputFormatClass(xxoo.class);
 		job.setMapperClass(FoFMapper.class);
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(IntWritable.class);
@@ -34,10 +34,10 @@ public class MyFoF {
 		
 		//----conf end if;
 		
-		Path input=new Path("/data/fof/input");
+		Path input=new Path("/data/fofwc/input");
 		FileInputFormat.addInputPath(job, input);
 		
-		Path output=new  Path("/data/fof/output");
+		Path output=new  Path("/data/fofwc/output");
 		if(output.getFileSystem(conf).exists(output)){
 			output.getFileSystem(conf).delete(output,true);
 		}
